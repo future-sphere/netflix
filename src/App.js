@@ -1,24 +1,37 @@
 import React from 'react';
 import logo from './logo.svg';
+import Banner from './components/Banner';
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Banner
+        title="Shawshank's redemption"
+        description="This is a movie about prison break"
+        series="Netflix Original"
+        theme="dark"
+      />
+      <Banner
+        title="Forest Gump"
+        description="This is a movie about how lucky you can get"
+        series="Classical cinema"
+        theme="light"
+      />
+      <Banner
+        title="Forest Gump"
+        description="This is a movie about how lucky you can get"
+        series="Classical cinema"
+        theme="dark"
+      />
+      <Banner
+        title="Forest Gump"
+        description="This is a movie about how lucky you can get"
+        series="Classical cinema"
+        theme="pink"
+      />
     </div>
   );
 }
